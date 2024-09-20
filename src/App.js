@@ -13,18 +13,18 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Nav />}>
+      {/* <Route path="/" element={<Nav />}>
           <Route index element={<LandingPage />} />
           <Route path="login" element={<Login />} />
           <Route path="forgot" element={<ForgotPassword />} />
           <Route path="reset-password/*" element={<PageNotFound />} />
           <Route path="*" element={<PageNotFound />} />
-        </Route>
+        </Route> */}
 
-        <Route path="/admin" element={<SideNav />}>
-          <Route index element={<Dashboard />} />
+        {/* <Route path="/admin" element={<SideNav />}> */}
+          <Route index element={<MainPage />} />
           <Route path="*" element={<PageNotFound />} />
-        </Route>
+        {/* </Route> */}
 
         <Route path="/loading-dock" element={<Header />}>
           <Route index element={<MainPage />} />
